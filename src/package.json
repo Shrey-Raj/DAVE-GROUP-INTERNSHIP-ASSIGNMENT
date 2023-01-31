@@ -1,0 +1,23 @@
+{
+  "name": "src",
+  "version": "1.0.0",
+  "description": "Internship ",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Shrey Raj",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "body-parser": "^1.20.1",
+    "express": "^4.18.2",
+    "google-auth-library": "^8.7.0",
+    "googleapis": "^110.0.0",
+    "hbs": "^4.2.0",
+    "mongoose": "^6.9.0",
+    "nodemailer": "^6.9.1",
+    "twilio": "^3.84.1",
+    "validator": "^13.7.0"
+  }
+}
