@@ -1,64 +1,55 @@
 <html>
   <head>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <style>
-      .container {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 100vh;
-        background-color: #f3e5f5;
-      }
-      .form-group {
-        margin-bottom: 2rem;
-        width: 50%;
-      }
-      .form-control {
-        background-color: #fff9c4;
-      }
-      .btn {
-        background-color: #6a1b9a;
-        color: #fff;
-        margin-right: 1rem;
-      }
-    </style>
+     
   </head>
+  <style>
+    .container-fluid{
+        background: rgb(222, 167, 226);
+    }
+  </style>
   <body>
-    <div class="container">
-      <form>
-        <div class="form-group">
-          <label for="bio">Bio</label>
-          <textarea class="form-control" id="bio" rows="3" style="width: 90%;"></textarea>
-        </div>
-        <div class="form-group">
-          <label for="birthdate">Birth Date</label>
-          <input type="text" class="form-control" id="birthdate">
-        </div>
-        <div class="form-group">
-          <label for="website">Website</label>
-          <input type="text" class="form-control" id="website">
-        </div>
-        <div class="form-group">
-          <label for="phone">Phone</label>
-          <input type="text" class="form-control" id="phone">
-        </div>
-        <div class="form-group">
-          <label for="country">Country</label>
-          <input type="text" class="form-control" id="country">
-        </div>
-        <div class="form-group">
-          <label for="gender">Gender</label>
-          <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="gender" id="male" value="male">
-            <label class="form-check-label" for="male">Male</label>
+    
+    <div class="container-fluid p-4 bg-lightPurple">
+        <div class="row">
+          <div class="col-lg-12">
+            <form>
+              <div class="form-group">
+                <textarea class="form-control" rows="5" style="width:100%;"></textarea>
+              </div>
+              <div class="form-group row">
+                <div class="col-lg-6">
+                  <input type="text" class="form-control mb-2" placeholder="Birth Date">
+                  <input type="text" class="form-control mb-2" placeholder="Website">
+                  <input type="text" class="form-control" placeholder="Phone">
+                </div>
+                <div class="col-lg-6">
+                  <input type="text" class="form-control mb-2" placeholder="Country">
+                  <input type="text" class="form-control mb-2" placeholder="Phone">
+                  <div class="form-group">
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" name="genderRadio" id="maleRadio" value="male">
+                      <label class="form-check-label" for="maleRadio">Male</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" name="genderRadio" id="femaleRadio" value="female">
+                      <label class="form-check-label" for="femaleRadio">Female</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group text-right">
+                <button type="submit" class="btn btn-lightOrange mr-2">Save Changes</button>
+                <button type="button" class="btn btn-lightOrange">Cancel</button>
+              </div>
+            </form>
           </div>
-          <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="gender" id="female" value="female">
-            <label class="form-check-label" for="female">Female</label>
-          </div>
         </div>
-        <div class="form-group">
-          <button type="submit" class="btn btn-primary">Save Changes</button>
-          <button type="reset" class="btn btn-secondary">Cancel</button>
-        </div>
-      </form>
+      </div>
+      
+        
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1"></script>
+     </body>
+</html>
